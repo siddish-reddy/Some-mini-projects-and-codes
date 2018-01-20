@@ -6,4 +6,4 @@ def fact(n):
 
 n = input("enter a number: ")
 x = fact(int(n))
-print("factorial of "+n+ " is "+ str(x))
+print("factorial of",n,"is"+ str(x))
