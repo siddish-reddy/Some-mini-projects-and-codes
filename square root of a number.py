@@ -1,8 +1,8 @@
 import math
 
-def bin(low, high, n,COUNT):
+def guess(low, high, n,COUNT):
  
-    if(COUNT<10):
+    if(COUNT<10):    #count for preventing stack overflow
         COUNT=COUNT+1
        
         mid=(low+high)/2
@@ -10,18 +10,17 @@ def bin(low, high, n,COUNT):
         if mid**2==n:
               return mid
         elif (mid**2<n):
-            return bin(mid, high,n,COUNT)
+            return guess(mid, high,n,COUNT)
         else:
-          return bin(low, mid, n,COUNT)
-    return (low+high)/2
+          return guess(low, mid, n,COUNT)
 
 def sqrt(n):
-    for i in range(0,int(n)):
+    for i in range(0,int(n)):      #since given input can also be a float
         if(i**2 == n):
            return i;
         elif (i**2>n):
             break;
-    return bin(i-1, i, n,0)
+    return guess(i-1, i, n,0)    #since the result is in between them
 
 
 n = float(input("Enter number: "))
