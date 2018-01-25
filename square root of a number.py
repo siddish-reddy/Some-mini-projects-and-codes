@@ -2,7 +2,10 @@ import math
 
 def guess(low, high, n,COUNT):
  
-    if(COUNT<10):    #count for preventing stack overflow
+    if(COUNT>10):  #count for preventing stack overflow
+        mid=(low+high)/2
+        return mid
+    else:
         COUNT=COUNT+1
        
         mid=(low+high)/2
