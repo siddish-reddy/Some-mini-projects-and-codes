@@ -7,3 +7,14 @@ def fact(n):    #this is basic version of finding factorial of a number go to ht
 n = input("enter a number: ")
 x = fact(int(n))
 print("factorial of",n,"is"+ str(x))
+
+
+#iterative method -------------------------
+
+
+n= int(input("enter a number: "))
+fact=1;
+if(fact>1):
+    for i in range(1,f+1):
+        fact=fact*i;
+print("factorial of ",n," is ",fact)
