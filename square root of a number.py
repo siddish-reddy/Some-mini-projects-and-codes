@@ -9,7 +9,7 @@ def guess(low, high, n,COUNT):
         COUNT=COUNT+1
        
         mid=(low+high)/2
-        print(str(COUNT),":low is", low, "high is", high,"with mid:",mid,"value is", mid**2)
+        print(str(COUNT),"current guess:",mid,"value is", mid**2)
         if mid**2==n:
               return mid
         elif (mid**2<n):
