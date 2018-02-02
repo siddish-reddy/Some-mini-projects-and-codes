@@ -1,31 +1,5 @@
-import math
-
-def guess(low, high, n,COUNT):
- 
-    if(COUNT>10):  #count for preventing stack overflow
-        mid=(low+high)/2
-        return mid
-    else:
-        COUNT=COUNT+1
-       
-        mid=(low+high)/2
-        print(str(COUNT),"current guess:",mid,"value is", mid**2)
-        if mid**2==n:
-              return mid
-        elif (mid**2<n):
-            return guess(mid, high,n,COUNT)
-        else:
-          return guess(low, mid, n,COUNT)
-
-def sqrt(n):
-    for i in range(0,int(n)):      #since given input can also be a float
-        if(i**2 == n):
-           return i;
-        elif (i**2>n):
-            break;
-    return guess(i-1, i, n,0)    #since the result is in between them
-
-
-n = float(input("Enter number: "))
-print("from newtons method "+ str(sqrt(n)))
-print("from math.sqrt result is "+ str(math.sqrt(n)))
+n=int(input("Enter the number:"))   
+A=1  #approximation 
+for i in range(1,10):
+   A=(A+n/A)/2   #newton's approxmation for the calculation of sq root 
+print("sq root of ",n,"is", A)
