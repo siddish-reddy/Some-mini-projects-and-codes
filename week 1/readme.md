@@ -7,6 +7,6 @@
 * Creating a file and displaying it's content
 * Most frequent words in given text
 
-###Graphics:
--[] Electron Orbits
--[] Bouncing Ball
+### Graphics:
+- [] Electron Orbits
+- [] Bouncing Ball
