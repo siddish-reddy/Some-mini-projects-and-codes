@@ -1,7 +1,9 @@
 l=[]
 n=int(input("Enter the No.of Elements :"))
+print("Enter the values now")
 for j in range(n):
     l.append(int(input()))
+
 for i in range(1,n):
     temp=l[i]
     j=i-1
