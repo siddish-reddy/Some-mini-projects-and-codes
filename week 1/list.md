@@ -1,2 +1,0 @@
-* Inseartion Sort
-Selection sort
