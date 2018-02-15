@@ -8,5 +8,5 @@
 * Most frequent words in given text
 
 ### Graphics:
-- [] Electron Orbits
-- [] Bouncing Ball
+- [ ] Electron Orbits
+- [ ] Bouncing Ball
